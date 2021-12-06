@@ -1,0 +1,205 @@
+import java.util.Scanner;
+public class Quiz {
+  public static void main(String[] args){
+	  Scanner sc = new Scanner(System.in);
+	  int Pointsum = 0;
+
+	  System.out.println("Q1:アメリカ合衆国初代大統領は？");
+	  System.out.print("A1:");
+	  String Qone = sc.next();
+	  switch(Qone) {
+	  case "ジョージワシントン":
+		  System.out.println("正解！");
+		  Pointsum++;
+		  break;
+	  default:
+		  System.out.println("不正解");
+		  break;
+	  }
+
+	  System.out.println("Q2:日本初代内閣総理大臣は？");
+	  System.out.print("A2:");
+	  String Qtwo = sc.next();
+	  switch(Qtwo) {
+	  case "伊藤博文":
+		  System.out.println("正解！");
+		  Pointsum++;
+		  break;
+	  default:
+		  System.out.println("不正解");
+		  break;
+	  }
+
+	  System.out.println("Q3:水素と酸素が組み合わさってできる物体は何？");
+	  System.out.print("A3:");
+	  String Qthree = sc.next();
+	  switch(Qthree) {
+	  case "水":
+		  System.out.println("正解！");
+		  Pointsum++;
+		  break;
+	  default:
+		  System.out.println("不正解");
+		  break;
+	  }
+
+	  System.out.println("Q4:日本Youtuberのパイオニアとなった人物は誰？");
+	  System.out.println("※アルファベットの大文字で入力せよ");
+	  System.out.print("A4:");
+	  String Qfour = sc.next();
+	  switch(Qfour) {
+	  case "HIKAKIN":
+		  System.out.println("正解！");
+		  Pointsum++;
+		  break;
+	  default:
+		  System.out.println("不正解");
+		  break;
+	  }
+
+	  System.out.println("Q5:鬼滅の刃に登場する水柱の名前は？");
+	  System.out.print("A5:");
+	  String Qfive = sc.next();
+	  switch(Qfive) {
+	  case "富岡義勇":
+		  System.out.println("正解！");
+		  Pointsum++;
+		  break;
+	  default:
+		  System.out.println("不正解");
+		  break;
+	  }
+
+	  System.out.println("さて、ここからは5択問題です。");
+
+	  System.out.println("Q6:Apple社ソフトウェアエンジニアのクリス・ラトナー氏が開発したPG言語は次のうちどれ？");
+	  String[]PGlangages = {"1:Java","2:Ruby","3:Swift","4:Python","5:C++"};
+	  for(String PGlangage:PGlangages) {
+		  System.out.println(PGlangage);
+	  }
+	  System.out.print("A6:");
+	  int Qsix = sc.nextInt();
+	  switch(Qsix) {
+	  case 3:
+		  System.out.println("正解！");
+		  Pointsum++;
+		  break;
+	  case 1:
+	  case 2:
+	  case 4:
+	  case 5:
+		  System.out.println("不正解");
+		  break;
+	  }
+
+	  System.out.println("Q7:イギリスの現在の王朝の名前は？");
+	  String[] Kings = {"1:ロマノフ朝","2:テューダー朝","3:ハノーヴァー朝","4:ウィンザー朝","5:ブルボン朝"};
+	  for(String King:Kings) {
+		  System.out.println(King);
+	  }
+	  System.out.print("A7:");
+	  int Qseven = sc.nextInt();
+	  switch(Qseven) {
+	  case 4:
+		  System.out.println("正解！");
+		  Pointsum++;
+		  break;
+	  case 1:
+	  case 2:
+	  case 3:
+	  case 5:
+		  System.out.println("不正解");
+		  break;
+	  }
+
+	  System.out.println("Q8:世界一面積が小さい国は？");
+	  String[]nationals = {"1:バチカン市国","2:モルディブ","3:スワジランド","4:フィリピン","5:スリランカ"};
+	  for(String national:nationals) {
+		  System.out.println(national);
+	  }
+	  System.out.print("A8:");
+	  int Qeight = sc.nextInt();
+	  switch(Qeight) {
+	  case 1:
+		  System.out.println("正解！");
+		  Pointsum++;
+		  break;
+	  case 2:
+	  case 3:
+	  case 4:
+	  case 5:
+		  System.out.println("不正解");
+		  break;
+	  }
+
+	  System.out.println("Q9:世界時価総額ランキングトップの企業は？");
+	  String[]coms = {"1:Amazon","2:TOYOTA","3:Facebook","4:楽天","5:Apple"};
+	  for(String com:coms) {
+		  System.out.println(com);
+	  }
+	  System.out.print("A9:");
+	  int Qnine = sc.nextInt();
+	  switch(Qnine) {
+	  case 5:
+		  System.out.println("正解！");
+		  Pointsum++;
+		  break;
+	  case 1:
+	  case 2:
+	  case 3:
+	  case 4:
+		  System.out.println("不正解");
+		  break;
+	  }
+
+	  System.out.println("Q10:ジャニーズ事務所の創業者は？");
+	  String[]firsts={"1:堀江貴文","2:ジャニー喜多川","3:木村拓哉","4:中居正広","5:松本人志"};
+	  for(String first:firsts) {
+		  System.out.println(first);
+	  }
+	  System.out.print("A10:");
+	  int Qten = sc.nextInt();
+	  switch(Qten) {
+	  case 2:
+		  System.out.println("正解！");
+		  Pointsum++;
+		  break;
+	  case 1:
+	  case 3:
+	  case 4:
+	  case 5:
+		  System.out.println("不正解");
+		  break;
+	  }
+
+	  System.out.println("以上で、問題を終了します。");
+	  System.out.println("あなたの総合得点は、"+Pointsum+"/10です。");
+
+	  switch(Pointsum) {
+	  case 0:
+	  case 1:
+	  case 2:
+		  System.out.println("もう一度出直してきてくださいｗ");
+		  break;
+	  case 3:
+	  case 4:
+	  case 5:
+		  System.out.println("まだまだですねw");
+		  break;
+	  case 6:
+	  case 7:
+		  System.out.println("まあ可もなく不可もなくって感じかな");
+		  break;
+	  case 8:
+	  case 9:
+		  System.out.println("おしい！あともうちょっと！");
+		  break;
+	  case 10:
+		  System.out.println("素晴らしい！思いっきり誇ってください！");
+		  break;
+
+	  }
+
+	  sc.close();
+  }
+}
